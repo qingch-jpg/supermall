@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports ={
     configureWebpack:{
         resolve:{
@@ -10,7 +12,8 @@ module.exports ={
             }
         }
     },
-    publicPath:'/supermall/'
+    publicPath:'/supermall/',
+    outputDir:path.resolve(__dirname,'docs')
 }
 
 
